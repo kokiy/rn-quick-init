@@ -1,5 +1,5 @@
 export default {
-  namespace: 'app',
+  namespace: 'Index',
   state: {
     number: 30,
   },

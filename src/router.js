@@ -8,6 +8,8 @@ import AuthLoadingScreen from './components/loading/index'
 import { Icon } from 'native-base'
 
 import Home from './pages/home'
+import addItem from './pages/add-item'
+
 import Order from './pages/order'
 import User from './pages/user'
 import Register from './pages/register'
@@ -16,6 +18,7 @@ import Restore from './pages/restore'
 
 const homeStack = createStackNavigator({
   Home,
+  addItem,
   Restore,
 })
 

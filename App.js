@@ -4,10 +4,13 @@ import { Provider } from 'react-redux'
 import App from './src/router'
 
 import { create } from 'dva-core'
-
+import immer from 'dva-immer'
 const models = [indexModel]
 
 const app = create() // 创建dva实例，可传递配置参数。https://dvajs.com/api/#app-dva-opts
+
+//immer plugin
+app.use(immer())
 
 models.forEach(o => {
   // 装载models对象
