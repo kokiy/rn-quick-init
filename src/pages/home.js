@@ -37,20 +37,20 @@ class Home extends Component {
 
   add = () => {
     this.props.dispatch({
-      type: 'Index/add',
+      type: 'Index/updateNumber',
       payload: { number: this.props.number + 1 },
     })
   }
 
   delete = () => {
     this.props.dispatch({
-      type: 'Index/delete',
+      type: 'Index/updateNumber',
       payload: { number: this.props.number - 1 },
     })
   }
 
   asyncAdd = () => {
-    this.props.dispatch({ type: 'Index/asyncAdd' })
+    this.props.dispatch({ type: 'Index/asyncUpdateNumber' })
   }
 
   render() {
